@@ -1,13 +1,13 @@
 {
-  "name": "double-click-tree-view",
-  "main": "./lib/double-click-tree-view",
-  "version": "1.1.0",
-  "description": "Tree-view responds only to double clicks for all operations",
+  "name": "double-click-tree-view-fork",
+  "main": "./lib/double-click-tree-view-fork",
+  "version": "1.0.0",
+  "description": "Tree-view responds only to double clicks for all operations, except chevrons",
   "keywords": [
     "tree-view",
     "ui"
   ],
-  "repository": "https://github.com/mattsfrey/atom-double-click-tree-view",
+  "repository": "https://github.com/JiDoan/atom-double-click-tree-view",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"

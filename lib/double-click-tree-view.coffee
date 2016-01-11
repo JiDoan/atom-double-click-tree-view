@@ -9,6 +9,12 @@ class DoubleClickTreeView
       @treeView.entryClicked = (e) ->
         false
 
+      @treeView.on 'click', '.entry', (e) =>
+        @treeView.openSelectedEntry.call(@treeView) if \
+          e.currentTarget.getAttribute('class').indexOf("directory") > -1 and \
+          e.toElement.getAttribute('class').indexOf("list-item") > -1
+        false
+
       @treeView.on 'dblclick', '.entry', (e) =>
         @treeView.openSelectedEntry.call(@treeView)
         false
